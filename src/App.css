@@ -41,7 +41,7 @@ body {
 }
 
 .hero-img-container {
-  background-color: aqua;
+  background-color: var(--stack-container-bg);
   min-width: 180px;
   width: 20%;
   aspect-ratio: 1 / 1;

@@ -25,7 +25,7 @@ export function Projects() {
       ],
       screenImgSrc: webCanvas,
       screenImgAlt: "Whiteboard-canvas home screenshot",
-      description: `This project was built to create a web-based drawing application similar to MS Paint, but with modern features and a responsive interface. It demonstrates advanced canvas manipulation techniques and state management in React.`,
+      description: `Este projeto consiste no desenvolvimento de uma plataforma web inspirada no MS Paint, mas com recursos modernos e interface responsiva. Com ele, aprofundei meus conhecimentos em HTML Canvas, gerenciamento de estados no React e lógica de programação com JavaScript.`,
       repository: "https://github.com/gabriel-piangers/Whiteboard-canvas",
     },
     {
@@ -55,11 +55,11 @@ export function Projects() {
       ],
       screenImgSrc: loginPage,
       screenImgAlt: "Login page home screenshot",
-      description: `This project was created to practice my full-stack development capabilities through a comprehensive login system connecting a React front-end with a Node.js back-end and PostgreSQL database.`,
+      description: `Projeto desenvolvido com o objetivo de aprimorar habilidades em desenvolvimento full-stack, por meio da criação de um sistema de login e cadastro integrando front-end em React, back-end com Node.js e banco de dados PostgreSQL.`,
       repository: "https://github.com/gabriel-piangers/Login-Page",
     },
     {
-      title: "2048-web",
+      title: "2048 web",
       lastCommit: "26/02/2025",
       stack: [
         {
@@ -75,14 +75,14 @@ export function Projects() {
       ],
       screenImgSrc: web2048,
       screenImgAlt: "2048 website homepage screenshot",
-      description: `This project served as a hands-on way to enhance my web development skills while reinforcing fundamental programming concepts in JavaScript.`,
+      description: `Projeto criado com o objetivo de praticar e aprimorar habilidades em desenvolvimento front-end, explorando a construção de interfaces interativas e responsivas. Além disso, foi fundamental para reforçar conceitos essenciais de lógica e estrutura de programação em JavaScript. `,
       repository: "https://github.com/gabriel-piangers/2048-web",
     },
   ];
 
   return (
     <section className="projects-section">
-      <h2 className="projects-header">My Projects</h2>
+      <h2 className="projects-header">Meus Projetos</h2>
 
       <div className="projects-grid">
         <div className="projects-display">
@@ -97,7 +97,7 @@ export function Projects() {
 
             <h2 className="projects-display-title">{projects[active].title}</h2>
             <p className="projects-display-p">
-              Last Commit: {projects[active].lastCommit}
+              Último Commit: {projects[active].lastCommit}
             </p>
             <div className="projects-display-stack">
               {projects[active].stack.map((stack, index) => {
@@ -117,7 +117,7 @@ export function Projects() {
               className="projects-display-github"
               onClick={() => window.open(projects[active].repository)}
             >
-              See it on Github
+              Ver no Github
             </button>
           </div>
         </div>
