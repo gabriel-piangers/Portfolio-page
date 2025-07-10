@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
   padding: 0;
   margin: 0;
@@ -7,7 +9,7 @@
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: white;
   background-color: var(--bg-color);
 }
@@ -32,6 +34,7 @@ body {
 /* --- Header / Hero --- */
 
 .hero-section {
+  font-family: Montserrat, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: var(--secondary-color);
   padding: 2rem 8%;
   display: flex;
@@ -76,7 +79,7 @@ body {
 /* --- Stack --0- */
 .stack-section {
   width: 100%;
-  margin-top: 2rem;
+  margin-top: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -118,7 +121,7 @@ body {
 /* --- Projects --- */
 
 .projects-section {
-  margin-top: 2rem;
+  margin-top: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -266,7 +269,7 @@ body {
 
 footer {
   background-color: rgb(20, 20, 20);
-  margin-top: 2rem;
+  margin-top: 4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
