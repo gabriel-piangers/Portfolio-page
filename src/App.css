@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   padding: 0;
@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: white;
   background-color: var(--bg-color);
 }
@@ -24,23 +24,24 @@ body {
 
 /*  --- Variaveis --- */
 :root {
-  --bg-color: rgb(53, 47, 43);
-  --secondary-color: rgb(36, 32, 28);
-  --window-color: rgb(71, 69, 60);
-  --stack-container-bg: rgb(37, 28, 28);
+  --bg-color: rgb(36, 34, 37);
+  --window-color: rgb(54, 54, 52);
+  --stack-container-bg: rgb(24, 24, 24);
+  --stack-container-hover: rgb(48, 48, 48);
 }
-
 
 /* --- Header / Hero --- */
 
 .hero-section {
-  font-family: Montserrat, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: var(--secondary-color);
+  font-family: Montserrat, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #4a3e16;
+  background: linear-gradient(44deg,rgb(59, 51, 24) 10%, rgb(23, 25, 41) 100%);
   padding: 2rem 8%;
   display: flex;
   align-items: center;
   margin: auto;
   justify-content: space-evenly;
+
 }
 
 .hero-img-container {
@@ -50,6 +51,7 @@ body {
   aspect-ratio: 1 / 1;
   border-radius: 100%;
   overflow: hidden;
+  box-shadow: 1px -4px 20px  rgba(255, 255, 255, 0.1);
 }
 
 .hero-img {
@@ -67,13 +69,12 @@ body {
 }
 
 .hero-p::before {
-  content: '';
+  content: "";
   display: inline-block;
   width: 3px;
   height: 1rem;
   background: white;
   margin-right: 0.5rem;
-
 }
 
 /* --- Stack --0- */
@@ -110,8 +111,9 @@ body {
 }
 
 .stack-img-container:hover {
-  background-color: rgb(75, 71, 63);
+  background-color: var(--stack-container-hover);
   scale: 115%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .stack-img {
@@ -147,8 +149,8 @@ body {
   background-color: var(--window-color);
   border-radius: 1.5rem;
   padding: 1rem;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
 }
-
 
 .projects-display-left {
   height: 100%;
@@ -219,6 +221,7 @@ body {
   background-color: rgb(32, 32, 32);
   scale: 105%;
   cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .projects-grid-menu {
@@ -245,6 +248,7 @@ body {
 .projects-card:hover {
   scale: 108%;
   cursor: pointer;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
 .projects-img {
@@ -275,7 +279,6 @@ footer {
   align-items: center;
   width: 100%;
   padding: 2rem 8%;
-
 }
 
 .footer-socials {
@@ -297,14 +300,13 @@ footer {
 
 .footer-contact:hover {
   scale: 105%;
-  background-color: rgba(0, 0, 0, 0.5);
   cursor: pointer;
+  box-shadow: -8px 8px rgba(255, 255, 255, 0.1);
 }
 
 .contact-icon {
   width: 36px;
 }
-
 
 /* --- Media Queries --- */
 
@@ -312,13 +314,14 @@ footer {
   .projects-display {
     flex-direction: column;
   }
-  .projects-display-left, .projects-display-right {
+  .projects-display-left,
+  .projects-display-right {
     width: 100%;
     margin-bottom: 1rem;
     padding: 0;
     border: none;
   }
-  
+
   .hero-title {
     font-size: 3rem;
   }
