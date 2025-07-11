@@ -2,6 +2,8 @@
 
 Uma página de portfólio pessoal desenvolvida para apresentar meus principais projetos, habilidades e formas de contato de maneira clara e intuitiva.
 
+[Acessar o site](https://gabrielpiangers.vercel.app/)
+
 ## Sobre o projeto
 
 Este projeto foi criado com o objetivo de reunir e exibir meus trabalhos de desenvolvimento de software, destacando projetos, stacks utilizadas e links para contato profissional. A interface é responsiva, com navegação intuitiva e visual atraente, focando em usabilidade e clareza das informações.
