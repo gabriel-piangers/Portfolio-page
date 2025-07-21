@@ -35,13 +35,12 @@ body {
 .hero-section {
   font-family: Montserrat, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: #4a3e16;
-  background: linear-gradient(44deg,rgb(59, 51, 24) 10%, rgb(23, 25, 41) 100%);
+  background: linear-gradient(44deg, rgb(59, 51, 24) 10%, rgb(23, 25, 41) 100%);
   padding: 2rem 8%;
   display: flex;
   align-items: center;
   margin: auto;
   justify-content: space-evenly;
-
 }
 
 .hero-img-container {
@@ -51,7 +50,7 @@ body {
   aspect-ratio: 1 / 1;
   border-radius: 100%;
   overflow: hidden;
-  box-shadow: 1px -4px 20px  rgba(255, 255, 255, 0.1);
+  box-shadow: 1px -4px 20px rgba(255, 255, 255, 0.1);
 }
 
 .hero-img {
@@ -148,13 +147,13 @@ body {
   display: flex;
   background-color: var(--window-color);
   border-radius: 1.5rem;
-  padding: 1rem;
+  padding: 1.5rem;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
 }
 
 .projects-display-left {
   height: 100%;
-  width: 47.5%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -164,7 +163,7 @@ body {
 }
 
 .projects-display-right {
-  width: 47.5%;
+  width: 50%;
   padding-left: 1.5rem;
   text-align: justify;
   display: flex;
@@ -186,11 +185,16 @@ body {
   margin-top: 0.4rem;
 }
 
+.projects-display-p {
+  font-size: 0.9rem;
+  font-weight: 200;
+}
+
 .projects-display-stack {
   display: flex;
   gap: 0.5rem;
   justify-content: end;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 .projects-stack-container {
@@ -243,12 +247,14 @@ body {
   transition: all 0.2s;
   display: flex;
   align-items: center;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
 }
 
 .projects-card:hover {
   scale: 108%;
   cursor: pointer;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
 .projects-img {
@@ -263,10 +269,15 @@ body {
   font-weight: 400;
   background-color: rgba(0, 0, 0, 0.7);
   position: absolute;
-  width: 100%;
+  width: 101%;
   bottom: 0;
-  padding: 0.2rem 0.8rem;
-  border-radius: 0 0 1rem 1rem;
+  padding: 0.2rem 0 0.3rem 1rem;
+  transform: translateY(2rem);
+  transition: transform 0.25s;
+}
+
+.projects-card:hover .projects-card-title {
+  transform: translateY(0);
 }
 
 /* --- Footer ---  */
@@ -319,7 +330,11 @@ footer {
     width: 100%;
     margin-bottom: 1rem;
     padding: 0;
-    border: none;
+    border-right: none;
+  }
+
+  .projects-display-description {
+    margin-bottom: 1rem;
   }
 
   .hero-title {
